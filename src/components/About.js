@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-10 w-full text-center">
+    <section className="py-10 w-full text-center" style={{ backgroundColor: '#121212' }}>
       <h2 className="text-3xl md:text-4xl font-semibold text-purple-400">
         About Me
       </h2>

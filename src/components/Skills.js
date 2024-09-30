@@ -28,10 +28,10 @@ const Skills = () => {
   };
 
   return (
-    <section className="py-10 w-full">
+    <section className="py-10 w-full" style={{ backgroundColor: '#121212' }}>
       <h2 className="text-3xl font-bold text-purple-500 mb-10 text-center">My Skills</h2>
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center"
+        className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center text-white"
         initial="hidden"
         animate="visible"
       >
