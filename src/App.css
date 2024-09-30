@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Global settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Light text for contrast */
+  text-align: center; /* Center text alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Sets a maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Adds padding to prevent content from touching edges */
+}
+
+/* Header and title styling */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: #1F1B24; /* Dark header background */
+  width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #BB86FC; /* Purple accent */
+}
+
+.about-section, .skills-section, .experience-section, .contact-section {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* Skills section styling */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.skill {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.experience-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-icons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-icons a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #BB86FC;
+  transition: transform 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVENESS: MEDIA QUERIES */
+
+/* Extra Small Devices (Mobiles) */
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .skill {
+    font-size: 1.5rem;
+  }
+
+  .contact-icons a {
+    font-size: 1.5rem;
+  }
+
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .about-section, .skills-section, .experience-section, .contact-section {
+    padding: 1rem;
+  }
+}
+
+/* Small Devices (Tablets, Large Phones) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.25rem;
+  }
+
+  .skill {
+    font-size: 1.75rem;
+  }
+
+  .contact-icons a {
+    font-size: 1.75rem;
+  }
+
+  .skills-container {
+    padding: 1.5rem;
+  }
+
+  .about-section, .skills-section, .experience-section, .contact-section {
+    padding: 1.5rem;
+  }
+}
+
+/* Medium Devices (Desktops and Large Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.5rem;
+  }
+
+  .skill {
+    font-size: 2rem;
+  }
+
+  .contact-icons a {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    padding: 2rem;
+  }
+
+  .about-section, .skills-section, .experience-section, .contact-section {
+    padding: 2rem;
+  }
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media (min-width: 1025px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 1.75rem;
+  }
+
+  .skill {
+    font-size: 2.5rem;
+  }
+
+  .contact-icons a {
+    font-size: 2.5rem;
   }
 }
